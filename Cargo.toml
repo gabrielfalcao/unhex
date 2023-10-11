@@ -1,0 +1,23 @@
+[package]
+name = "unhex"
+version = "0.0.0"
+edition = "2021"
+license = "Unlicense"
+authors = ["Gabriel Falcão <gabriel@nacaolivre.org>"]
+description = "Swiss-Army Knife to Hexadecimal Data"
+documentation = "https://docs.rs/unhex"
+readme = "README.md"
+homepage = "https://github.com/gabrielfalcao/unhex"
+
+[dependencies]
+clap = { version = "4.4.6", features = ["derive", "unicode", "string", "env"] }
+hex = "0.4.3"
+
+[[bin]]
+name = "unhex"
+path = "src/main.rs"
+bench = false
+
+[lib]
+name = "unhex"
+path = "src/lib.rs"
